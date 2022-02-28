@@ -107,6 +107,16 @@ input {
     border: 3px solid gray;
     border-radius: 8px;
 }
+input:focus{
+    border: 3px solid lightblue;
+    background-color: rgba(0,0,0,.1);
+    box-shadow: 5px 5px 5px rgba(128, 128, 128,0.3), -2px -2px 5px rgba(128, 128, 128,0.3);
+}
+input[type="email"]:invalid, input[type="password"]:invalid { 
+    border: 3px solid #D55C5F;
+    color: #D55C5F;
+}
+
 
 .bottom-row{
     /* background-color: var(--odd-row-colour); */
@@ -161,5 +171,10 @@ input {
     }
     .bottom-content{
         align-items: flex-start;
+    }
+    input:hover{
+        /* background-color: rgba(0,0,0,.07); */
+        box-shadow: 5px 5px 5px rgba(128, 128, 128,0.3), -2px -2px 5px rgba(128, 128, 128,0.3);
+        
     }
 }
